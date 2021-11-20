@@ -107,4 +107,28 @@ public class LandRover extends FourWheeler {
         String maxTorque = "700Nm@3500-5000rpm";
         return maxTorque;
     }
+    public static void Casting()
+    {
+        int i=9;
+        double d=(double) i;
+        System.out.println("casted from int to double "+d);
+    }
+    public static void Exception()
+    {
+        int a=0;
+        int g=8;
+        try{
+            int i=g/a;
+            System.out.println("Print divided value"+i);
+            }
+        catch(Exception E){
+            System.out.println("Generated Exceptions"+E);
+        }
+    }
+     
+    public static void main(String[] args)
+    {
+       Casting(); 
+       Exception();
+    }
 }
