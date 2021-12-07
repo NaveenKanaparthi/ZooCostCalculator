@@ -26,12 +26,18 @@ public class ZooCostCalculatorController {
      * @param model //the model that holds information from controller to view
      * @return View
      */
+     
+   // @GetMapping(path = "/")
+   //public String index(
+   //         @RequestParam(name = "id", required = false, defaultValue = "0") String id,
+   //         Model model) {
+   //     model.addAttribute("id", id);
+   //     return "index";
+   // }
+    
     @GetMapping(path = "/")
-    public String index(
-            @RequestParam(name = "id", required = false, defaultValue = "0") String id,
-            Model model) {
-        model.addAttribute("id", id);
-        return "index";
+    public String about() {
+        return "about";
     }
 }
 
